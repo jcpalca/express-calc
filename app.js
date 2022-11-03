@@ -20,7 +20,8 @@ const MISSING = "Expected key `nums` with comma-separated list of numbers.";
 
 
 /** Finds mean of nums in qs: returns {operation: "mean", result }
- * User must submit nums as a string of numbers separated by only commas!
+ *  User must submit nums as a string of numbers separated by only commas!
+ *  Return BadRequestError otherwise.
 */
 app.get("/mean", function(req, res) {
 
@@ -43,7 +44,10 @@ app.get("/mean", function(req, res) {
 
 
 
-/** Finds median of nums in qs: returns {operation: "median", result } */
+/** Finds median of nums in qs: returns {operation: "median", result }
+ *  User must submit nums as a string of numbers separated by only commas!
+ *  Return BadRequestError otherwise.
+ */
 app.get("/median", function(req, res) {
 
   // debugger;
@@ -64,7 +68,10 @@ app.get("/median", function(req, res) {
 });
 
 
-/** Finds mode of nums in qs: returns {operation: "mean", result } */
+/** Finds mode of nums in qs: returns {operation: "mean", result }
+ *  User must submit nums as a string of numbers separated by only commas!
+ *  Return BadRequestError otherwise.
+*/
 app.get("/mode", function(req, res) {
 
   // debugger;
